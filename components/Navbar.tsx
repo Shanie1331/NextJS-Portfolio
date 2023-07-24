@@ -10,13 +10,11 @@ const NavItem: FunctionComponent<{
 }> = ({ active, setActive, name, route }) => {
    return active !== name ? (
       <Link href={route}>
-         <a>
-            <span
-               className='mx-2 cursor-pointer hover:border-b-4 hover:text-green'
-               onClick={() => setActive(name)}>
-               {name}
-            </span>
-         </a>
+         <span
+            className='mx-2 cursor-pointer hover:border-b-4 hover:text-green'
+            onClick={() => setActive(name)}>
+            {name}
+         </span>
       </Link>
    ) : null
 }
@@ -30,7 +28,8 @@ const Navbar = () => {
    useEffect(() => {
       if (pathname === '/') setActive('About')
       else if (pathname === '/projects') setActive('Projects')
-      else if (pathname === '/resume') setActive('Resume')
+      else if (pathname === '/skills') setActive('Skills')
+      else if (pathname === '/experience') setActive('Experience')
    }, [])
 
    return (
@@ -49,8 +48,14 @@ const Navbar = () => {
             <NavItem
                active={active}
                setActive={setActive}
-               name='Resume'
-               route='/resume'
+               name='Skills'
+               route='/skills'
+            />
+            <NavItem
+               active={active}
+               setActive={setActive}
+               name='Experience'
+               route='/experience'
             />
             <NavItem
                active={active}

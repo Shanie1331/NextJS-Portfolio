@@ -1,6 +1,4 @@
-import { RiComputerLine } from "react-icons/ri";
-import { FaServer } from "react-icons/fa";
-import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
+import { AiOutlineAntDesign, AiOutlineApi, AiOutlineApartment, AiFillGolden, AiTwotoneSetting } from "react-icons/ai";
 import { MdDeveloperMode } from "react-icons/md";
 import { IProject, Service, Skill } from "./types";
 
@@ -8,71 +6,101 @@ import { BsCircleFill } from "react-icons/bs";
 
 export const services: Service[] = [
   {
-    Icon: RiComputerLine,
-    title: "Frontend Development",
-    about:
-      "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ",
-  },
-  {
-    Icon: FaServer,
-    title: "Backend  Development",
-    about:
-      "handle database, server, api using <b>Express </b> & other popular frameworks",
-  },
-  {
-    Icon: AiOutlineApi,
-    title: "API Development",
-    about:
-      "I can develop robust  REST API using <b>django-rest-api</b>  & <b>Node API</b> ",
+    Icon: AiOutlineApartment,
+    title: "Leadership And Management",
+    about: "Sprint Ceremonies, Documentation, People Management",
   },
   {
     Icon: MdDeveloperMode,
-    title: "Competitive Coder",
-    about: "a daily problem solver in <b>HackerRank</b>  and <b>Leet Code</b> ",
+    title: "Cross Platform Mobile Apps",
+    about: "React Native, TypeScript, GraphQL, Firebase, Jest, RTL",
+  },
+  {
+    Icon: AiOutlineApi,
+    title: "FullStack Development ",
+    about: "FE heavy, Node, MongoDB, MYSQL, GraphQL, Jest",
+  },
+  {
+    Icon: AiFillGolden,
+    title: "Architecture  & Design Patterns",
+    about: "Micro Front-end, Design System, HLD, LLD, Design Patterns",
   },
   {
     Icon: AiOutlineAntDesign,
-    title: "UI/UX designer",
-    about:
-      "stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ",
+    title: "Testing, Monitoring & Scaling",
+    about: "AB, Mock, API and Snapshot Testing, Mixpanel, Sentry, BugSnag",
   },
   {
-    Icon: RiComputerLine,
-    title: "Whatever",
-    about:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",
+    Icon: AiTwotoneSetting,
+    title: "Maintenance & Security",
+    about: "Optimizations, Profiling, Web Vitals, Performance measures, Web Security",
   },
 ];
 
 export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
-    name: "Python",
-    level: "45",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Java Script",
-    level: "60",
-  },
-  {
-    Icon: BsCircleFill,
     name: "React Native",
-    level: "80",
+    level: "90",
   },
   {
     Icon: BsCircleFill,
     name: "React",
-    level: "70",
+    level: "90",
   },
   {
     Icon: BsCircleFill,
-    name: "Django",
+    name: "Node",
+    level: "60",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "MongoDB & MYSQL",
+    level: "60",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Javascript",
     level: "80",
   },
   {
     Icon: BsCircleFill,
-    name: "Bootstrap",
+    name: "Architecture & Design patterns",
+    level: "80",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Leadership and Management",
+    level: "80",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Next",
+    level: "70",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Test Driven Development",
+    level: "80",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Redux",
+    level: "80",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Micro FrontEnd Arch.",
+    level: "80",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Firebase & Real time databse",
+    level: "80",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "AB Testing",
     level: "80",
   },
 ];
@@ -80,56 +108,95 @@ export const languages: Skill[] = [
 export const tools: Skill[] = [
   {
     Icon: BsCircleFill,
-    name: "Figma",
+    name: "Android Studio",
     level: "85",
   },
   {
     Icon: BsCircleFill,
-    name: "Photoshop",
+    name: "xCode",
+    level: "85",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Figma",
     level: "45",
   },
   {
     Icon: BsCircleFill,
-    name: "Illustrator",
+    name: "Circle CI",
     level: "60",
   },
   {
     Icon: BsCircleFill,
-    name: "Framer",
+    name: "JIRA",
+    level: "45",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Fastlane",
+    level: "45",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Mixpanel",
+    level: "45",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Rudderstack",
+    level: "45",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Zendesk",
+    level: "45",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Lens",
     level: "45",
   },
 ];
 
 export const projects: IProject[] = [
   { 
-    name: "COVID Tracker",
+    name: "Orange Health App",
     description:
-      "This app shows a statistical view about corona virus over the world",
-    image_path: "/images/covid.jpg",
-    deployed_url: "https://covid-19-tracker-by-sumit.web.app/",
-    github_url: "https://github.com/Dey-Sumit/covid-19-tracker",
-    category: ["react"],
-    key_techs: ["React", "Chart.js", "Material UI"],
+      "Re-Architect Whole App · Design System Library Implementation · App Profiling  · Bundle Size reduction by half · Feature toggling · Store Management and Migration · CI/CD Pipeline Setup · Publishing iOS & Android Apps ·Test Driven Development",
+    image_path: "/images/oh.png",
+    deployed_url: "https://play.google.com/store/apps/details?id=in.orangehealth.patient&hl=en_IN&gl=US",
+    github_url: "",
+    category: ["react native", "react"],
+    key_techs: ["React Native", "React", "Redux-toolkit", "React Testing Lib", "Jest", "Python"],
   },
   {
-    name: "Algorithm Visualizer",
-    image_path: "/images/algoVisual.png",
-    deployed_url: "https://visual-algorithm.web.app/",
-    github_url: "https://github.com/Dey-Sumit/algorithm-visualizer",
-    category: ["react"],
+    name: "Orange Health Web",
+    image_path: "/images/oh.png",
+    deployed_url: "https://www.orangehealth.in/",
+    github_url: "",
+    category: ["react", "next"],
     description:
-      "An web app which shows how an algorithm (path finding or sorting) works with cool animation",
-    key_techs: ["React", "firebase", "Framer Motion"],
+      "Microfrontends Architecture · Design System Library Implementation · Feature toggling · SEO Enhancements · Web Vitals improvement",
+    key_techs: ["React", "Next", "TypeScript", "Redux-toolkit", "React Testing Lib", "Jest"],
   },
-
-  {
-    name: "Dev Talks",
-    image_path: "/images/dev.jpg",
-    deployed_url: "https://dev-talks.herokuapp.com/",
-    github_url: "https://github.com/Dey-Sumit/Dev-talks",
-    category: ["node", "mongo", "react"],
+  { 
+    name: "Orange Health for Doctors",
     description:
-      "Social Media app for developers who can share project,create posts,etc...",
+      "Application maintenance and support",
+    image_path: "/images/oh.png",
+    deployed_url: "https://play.google.com/store/apps/details?id=in.orangehealth.patient&hl=en_IN&gl=US",
+    github_url: "",
+    category: ["react native"],
+    key_techs: ["React Native"],
+  },
+  {
+    name: "Yara Connect",
+    image_path: "/images/oh.png",
+    deployed_url: "https://play.google.com/store/apps/details?id=com.yara.connect.prod&hl=en&gl=US",
+    github_url: "",
+    category: ["react native", "node", "mongo", "react"],
+    description:
+      "A reward-based loyalty program for Yara subdealers. Scan and earn points, Convert points to reward & Get rewards or redeem for cash",
     key_techs: [
       "React",
       "Redux",
@@ -138,66 +205,109 @@ export const projects: IProject[] = [
       "Mongo",
       "REST API",
       "Bootstrap",
+      "Saga"
     ],
   },
 
   {
-    name: "Realtime Chat App",
-    image_path: "/images/chatapp.jpg",
-    deployed_url: "https://sumit-chat.netlify.app/",
-    github_url: "https://github.com/Dey-Sumit/chat-app-socket.io-react-node",
-    category: ["node", "react"],
+    name: "Yara Bodega",
+    image_path: "/images/oh.png",
+    deployed_url: "https://yarabodega.com/",
+    github_url: "",
+    category: ["react native", "node", "react"],
     description:
-      "Basic Realtime Chat App where one can create a room can talk to each other",
-    key_techs: ["React", "Node", "Express", "Socket", "Bootstrap"],
+      "A platform for retailers and farmers to connect",
+    key_techs: ["React", "Node", "Express", "Socket", "Bootstrap", "Saga"],
   },
 
   {
-    name: "Tweeter Clone",
-    image_path: "/images/tweetme.jpg",
-    deployed_url: "http://sumaxtweetme.pythonanywhere.com/",
-    github_url: "https://github.com/Dey-Sumit/tweetme",
-    category: ["django", "react"],
+    name: "UEFA App",
+    image_path: "/images/oh.png",
+    deployed_url: "https://play.google.com/store/apps/details?id=com.uefa.ucl",
+    github_url: "",
+    category: ["react native", "react"],
     description:
-      "First Django Project :) | Typical Social Media App where one can post,like ,comment etc",
+      "Get unrivalled coverage of Europe's ultimate club football competition. The official UEFA Champions League app brings you the latest soccer news, scores, draws, live coverage, next-day video highlights and our free Fantasy Football game.",
+    key_techs: ["React", "Django", "Django REST API"],
+  },
+  {
+    name: "UEFA Web",
+    image_path: "/images/oh.png",
+    deployed_url: "https://gaming.uefa.com/en/uefachampionsleague",
+    github_url: "",
+    category: ["react"],
+    description:
+      "Get unrivalled coverage of Europe's ultimate club football competition. The official UEFA Champions League web brings you the latest soccer news, scores, draws, live coverage, next-day video highlights and our free Fantasy Football game.",
     key_techs: ["React", "Django", "Django REST API"],
   },
 
   {
-    name: "Color Classification using tf.js",
-    image_path: "/images/color.jpg",
-    deployed_url: "!#",
-    github_url: "https://github.com/Dey-Sumit/color-classification",
-    category: ["express"],
+    name: "UEL",
+    image_path: "/images/oh.png",
+    deployed_url: "https://play.google.com/store/apps/details?id=com.uefa.uel",
+    github_url: "",
+    category: ["react native", "react"],
     description:
-      "Tried ML with JS :) | this app classifies a color using CNN algorithm in browser",
-    key_techs: ["Express", "TensorFlow.js", "Vanilla js"],
+      "Get unrivalled coverage of the UEFA Europa League and UEFA Europa Conference League with the competitions' official app. We'll bring you the latest football news, live coverage, match highlights and much more.",
+    key_techs: ["React", "Django", "Django REST API"],
+  },
+
+  {
+    name: "FIFA",
+    image_path: "/images/oh.png",
+    deployed_url: "!#",
+    github_url: "",
+    category: ["react"],
+    description:
+      "Football Fantasy for the Women's World cup on the main website",
+    key_techs: ["React", "Redux", "Axios", "Bootstrap", "Thunk"],
   },
   {
-    name: "YouTube using YouTube ",
-    image_path: "/images/youtubeClone.png",
-    deployed_url: "https://not-utube.web.app/",
-    github_url: "https://github.com/Dey-Sumit/youtube-clone-tutorial-up",
-    category: ["express"],
+    name: "Ametek",
+    image_path: "/images/oh.png",
+    deployed_url: "",
+    github_url: "https://www.ametek.com/",
+    category: ["react"],
     description:
-      'Full(almost) Functional YouTube replica where one can login with his/her youtube account to enjoy "not-YouTube".User can like a video,comment on a video & Much More ',
+      'Leading global provider of differentiated electronic instruments and electromechanical devices',
     key_techs: [
       "React",
       "Redux",
-      "Firebase Auth",
-      "YouTube API",
-      "Sass",
+      "Sitecore",
+      "Jquery",
       "Bootstrap",
+      "Javascript",
+      "c#"
     ],
   },
   {
-    name: "Football App",
-    image_path: "/images/football.png",
-    deployed_url: "https://o-my-goal.web.app/",
-    github_url: "https://github.com/Dey-Sumit/football-app",
+    name: "Maritime",
+    image_path: "/images/oh.png",
+    deployed_url: "",
+    github_url: "",
+    category: ["react native", "react"],
+    description:
+      "New app for the global marine community",
+    key_techs: ["React Native", "React", "Redux", "Axios", "Node", "Bootstrap"],
+  },
+  {
+    name: "Dinamalar Fantasy",
+    image_path: "/images/oh.png",
+    deployed_url: "",
+    github_url: "",
     category: ["react"],
     description:
-      "o my goal replica where an user can keep an eye on his favorite club.This app will keep providing \n all the statistics of that club.all the fans can also chat ",
-    key_techs: ["React", "Redux", "Firebase Auth", "API", "Sass", "Bootstrap"],
+      "Online Cricket Fantasy for Tamil cricket enthusiasts",
+    key_techs: ["React", "Redux", "API", "Sass", "Bootstrap"],
+  },
+  {
+    name: "Yahoo Fantasy",
+    image_path: "/images/oh.png",
+    deployed_url: "",
+    github_url: "",
+    category: ["react"],
+    description:
+      "Online Cricket Fantasy for Indian cricket enthusiasts",
+    key_techs: ["React", "Redux", "API", "Sass", "Bootstrap"],
   },
 ];
