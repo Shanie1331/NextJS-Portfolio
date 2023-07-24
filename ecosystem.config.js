@@ -5,10 +5,10 @@ module.exports = {
 
   deploy : {
     production : {
-      key: 'diversoIN.pem',
+      key: '/Users/kosha/Documents/Important/aws/pem/diversoIN.pem',
       user : 'ubuntu',
       host : '3.108.194.72',
-      ref  : 'origin/master',
+      ref  : 'origin/main',
       repo : 'git@github.com:Shanie1331/NextJS-Portfolio.git',
       path : '/home/ubuntu',
       'pre-deploy-local': '',
