@@ -1,8 +1,11 @@
 import { AiOutlineAntDesign, AiOutlineApi, AiOutlineApartment, AiFillGolden, AiTwotoneSetting } from "react-icons/ai";
-import { MdDeveloperMode } from "react-icons/md";
+import { MdArchitecture, MdDeveloperMode, MdLeaderboard } from "react-icons/md";
+import { FaDatabase, FaFigma, FaMicrochip, FaNodeJs, FaReact } from "react-icons/fa";
+import { SiCircleci, SiFastlane, SiFirebase, SiJirasoftware, SiLens, SiNextdotjs, SiRedux, SiTestinglibrary, SiZendesk } from "react-icons/si";
+import { TbAlphabetGreek, TbBrandJavascript, TbBrandMixpanel, TbBrandReactNative } from "react-icons/tb";
 import { IProject, Service, Skill } from "./types";
 
-import { BsCircleFill } from "react-icons/bs";
+import { BsAndroid, BsApple, BsCircleFill } from "react-icons/bs";
 
 export const services: Service[] = [
   {
@@ -39,67 +42,67 @@ export const services: Service[] = [
 
 export const languages: Skill[] = [
   {
-    Icon: BsCircleFill,
+    Icon: TbBrandReactNative,
     name: "React Native",
     level: "90",
   },
   {
-    Icon: BsCircleFill,
+    Icon: FaReact,
     name: "React",
     level: "90",
   },
   {
-    Icon: BsCircleFill,
+    Icon: FaNodeJs,
     name: "Node",
     level: "60",
   },
   {
-    Icon: BsCircleFill,
-    name: "MongoDB & MYSQL",
-    level: "60",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Javascript",
-    level: "80",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Architecture & Design patterns",
-    level: "80",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Leadership and Management",
-    level: "80",
-  },
-  {
-    Icon: BsCircleFill,
+    Icon: SiNextdotjs,
     name: "Next",
     level: "70",
   },
   {
-    Icon: BsCircleFill,
-    name: "Test Driven Development",
+    Icon: TbBrandJavascript,
+    name: "Javascript",
     level: "80",
   },
   {
-    Icon: BsCircleFill,
+    Icon: FaDatabase,
+    name: "MongoDB & MYSQL",
+    level: "65",
+  },
+  {
+    Icon: SiRedux,
     name: "Redux",
-    level: "80",
+    level: "90",
   },
   {
-    Icon: BsCircleFill,
+    Icon: MdArchitecture,
+    name: "Architecture & Design patterns",
+    level: "75",
+  },
+  {
+    Icon: MdLeaderboard,
+    name: "Leadership and Management",
+    level: "85",
+  },
+  {
+    Icon: SiTestinglibrary,
+    name: "Test Driven Development",
+    level: "85",
+  },
+  {
+    Icon: FaMicrochip,
     name: "Micro FrontEnd Arch.",
-    level: "80",
+    level: "75",
   },
   {
-    Icon: BsCircleFill,
-    name: "Firebase & Real time databse",
-    level: "80",
+    Icon: SiFirebase,
+    name: "Firebase & Realtime databse",
+    level: "75",
   },
   {
-    Icon: BsCircleFill,
+    Icon: TbAlphabetGreek,
     name: "AB Testing",
     level: "80",
   },
@@ -107,39 +110,44 @@ export const languages: Skill[] = [
 
 export const tools: Skill[] = [
   {
-    Icon: BsCircleFill,
+    Icon: BsAndroid,
     name: "Android Studio",
     level: "85",
   },
   {
-    Icon: BsCircleFill,
+    Icon: BsApple,
     name: "xCode",
     level: "85",
   },
   {
-    Icon: BsCircleFill,
+    Icon: FaFigma,
     name: "Figma",
-    level: "45",
+    level: "75",
   },
   {
-    Icon: BsCircleFill,
+    Icon: SiCircleci,
     name: "Circle CI",
+    level: "75",
+  },
+  {
+    Icon: SiJirasoftware,
+    name: "JIRA",
+    level: "90",
+  },
+  {
+    Icon: SiFastlane,
+    name: "Fastlane",
+    level: "80",
+  },
+  {
+    Icon: TbBrandMixpanel,
+    name: "Mixpanel",
     level: "60",
   },
   {
-    Icon: BsCircleFill,
-    name: "JIRA",
-    level: "45",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Fastlane",
-    level: "45",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Mixpanel",
-    level: "45",
+    Icon: SiZendesk,
+    name: "Zendesk",
+    level: "65",
   },
   {
     Icon: BsCircleFill,
@@ -147,14 +155,9 @@ export const tools: Skill[] = [
     level: "45",
   },
   {
-    Icon: BsCircleFill,
-    name: "Zendesk",
-    level: "45",
-  },
-  {
-    Icon: BsCircleFill,
+    Icon: SiLens,
     name: "Lens",
-    level: "45",
+    level: "40",
   },
 ];
 
