@@ -7,7 +7,7 @@ module.exports = {
     production : {
       key: '/Users/kosha/Documents/Important/aws/pem/diversoIN.pem',
       user : 'ubuntu',
-      host : '3.108.194.72',
+      host : '3.110.197.222',
       ref  : 'origin/main',
       repo : 'git@github.com:Shanie1331/NextJS-Portfolio.git',
       path : '/home/ubuntu',
