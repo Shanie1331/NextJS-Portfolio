@@ -14,7 +14,7 @@ const Sidebar = () => {
   return (
     <>
       <Image
-        src="https://media.licdn.com/dms/image/D5635AQF4ZBdNuH09hg/profile-framedphoto-shrink_400_400/0/1689934163411?e=1690675200&v=beta&t=wv-4kzzOTWcvg2d4z3ebWiljYP3yeSxBYjLzAAt3CUg"
+        src="/images/dp.jpeg"
         alt="avatar"
         className=" mx-auto border rounded-full "
         height="128"
