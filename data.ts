@@ -192,11 +192,32 @@ export const tools: Skill[] = [
 
 export const projects: IProject[] = [
   {
-    name: "ADSS Trader",
+    name: "COE [HVAC, IOT] (Freelance)",
+    description:
+      "The COE (HVAC) app features a contemporary look and feel that allows homeowners to control their Infinity system remotely. The app features an enhanced homeowner experience, improved functionality and increased connectivity performance between the mobile device and their Infinity home comfort system. In addition, homeowners will be able to learn more about the air quality around their home, including a snapshot of various pollutants levels and the Air Quality Index in the atmosphere near them.",
+    image_path: "/images/oh.png",
+    deployed_url: "",
+    github_url: "",
+    category: ["expo", "react native", "react"],
+    key_techs: [
+      "Expo",
+      "React Native",
+      "React",
+      "Rtk-query",
+      "React Testing Lib",
+      "Jest",
+      "Nx",
+      "React Native Web",
+      "Bluetooth",
+      "Wifi",
+    ],
+  },
+  {
+    name: "Trader (Freelance)",
     description:
       "We developed a trading application for Over-the-Counter (OTC) derivatives contracts and forex spot markets. Built as a cross-platform app using React Native Expo for seamless functionality on iOS and Android. Used React and Tailwind for dynamic and responsive user interfaces. Used TypeScript to ensure type safety and maintainable code. Used RxJS to handle complex asynchronous data streams, enabling real-time trading data updates. Used Node.js and Express to build a scalable and efficient backend. Used Jest for comprehensive unit and integration testing. Used Appium for end-to-end testing, ensuring a flawless mobile user experience. Integrated Firebase for analytics to track user behavior and system performance. Integrated ChartIQ to provide professional-grade, interactive financial charts for traders. Integrated Sentry for monitoring and logging, enabling quick detection and resolution of issues. Delivered real-time data streaming for trading updates. Empowered traders with Interactive advanced financial charting capabilities. Designed a scalable system to accommodate future enhancements and evolving market needs with feature toggles. Ensured system reliability and stability through comprehensive testing and monitoring.",
     image_path: "/images/oh.png",
-    deployed_url: "https://www.adss.com/",
+    deployed_url: "",
     github_url: "",
     category: ["expo", "react native", "react"],
     key_techs: [
@@ -206,7 +227,6 @@ export const projects: IProject[] = [
       "Redux-toolkit",
       "React Testing Lib",
       "Jest",
-      "Python",
       "RxJS",
       "Node",
       "Express",
