@@ -1,5 +1,9 @@
 import { FunctionComponent, useState } from "react";
-import { AiFillExclamationCircle, AiFillGithub, AiFillProject } from "react-icons/ai";
+import {
+  AiFillExclamationCircle,
+  AiFillGithub,
+  AiFillProject,
+} from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 import { IProject } from "../types";
 
@@ -37,10 +41,12 @@ const ProjectCard: FunctionComponent<{
         className="cursor-pointer"
         onClick={() => setShowDetail(true)}
       /> */}
-      <p onClick={() => setShowDetail(true)} className="my-2 text-center">{name}</p>
+      <p onClick={() => setShowDetail(true)} className="my-2 text-center">
+        {name}
+      </p>
 
       {showDetail && (
-        <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 md:grid-cols-1 gap-x-12 dark:text-white dark:bg-dark-100">
+        <div className="absolute top-0 left-0 z-10 grid w-full h-max border-2 rounded-lg p-2 text-black bg-gray-100 md:grid-cols-1 gap-x-12 dark:text-white dark:bg-dark-100">
           {/* <div>
             <img src={image_path} alt={name} />
 
@@ -54,7 +60,7 @@ const ProjectCard: FunctionComponent<{
             
           </div> */}
 
-          <div>
+          <div className="">
             <h2 className="mb-6 text-xl font-medium ">{name}</h2>
             <h3 className="mb-6 font-medium">{description}</h3>
 
